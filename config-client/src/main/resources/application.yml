@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: config-client
+
+#关闭安全认证
+management:
+  #refresh接入点显式暴露出来
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
