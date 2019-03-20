@@ -4,7 +4,6 @@ server:
 eureka:
   instance:
     hostname: localhost
-    status-page-url: http://localhost:7003/index
   client:
     serviceUrl:
       defaultZone: http://localhost:7001/eureka/  #注册中心的地址
