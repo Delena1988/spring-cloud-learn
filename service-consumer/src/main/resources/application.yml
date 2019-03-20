@@ -1,0 +1,16 @@
+server:
+  port: 7004
+
+eureka:
+  instance:
+    hostname: localhost
+    status-page-url: http://localhost:7004/index
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/  #注册中心的地址
+
+spring:
+  application:
+    name: service-consumer  #服务的名字
+
+
