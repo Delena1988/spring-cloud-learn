@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 2019/3/20 10:40
  * @Description
  */
-@FeignClient(value = "service-producer")
+@FeignClient(value = "service-producer", fallback = FeignServiceHystrix.class)
 public interface FeignExampleService {
 
 	@GetMapping("hello")

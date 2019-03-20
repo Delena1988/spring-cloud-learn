@@ -12,4 +12,8 @@ spring:
   application:
     name: service-consumer  #服务的名字
 
+#开启Hystrix
+feign:
+  hystrix:
+    enabled: true
 
