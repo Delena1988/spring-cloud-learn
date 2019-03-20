@@ -9,17 +9,22 @@
     </parent>
 
     <groupId>com.linjian</groupId>
-    <artifactId>service-producer</artifactId>
+    <artifactId>config-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service-producer</name>
-    <description>service-producer</description>
+    <name>config-client</name>
+    <description>config-client</description>
 
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -27,13 +32,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
     </dependencies>
-
 
     <build>
         <plugins>

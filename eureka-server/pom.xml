@@ -14,6 +14,8 @@
 	<name>eureka-server</name>
 	<description>eureka-server</description>
 
+	<packaging>jar</packaging>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
